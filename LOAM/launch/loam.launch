@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node name="LOAM_node" pkg="LOAM" type="main.py" output="screen"/>
+	
+	<!-- <rosparam file="$(find fast_slam2_ros)/config/fast_slam2_params.yaml" /> -->
+	
+	
+	<!-- <param name="/fast_slam2/observation_topic" value="/landmarks"/> -->
+	<param name="fast_slam2/observation_topic" value="airsim/Cones"/>
+	<!--<param name="fast_slam2/observation_topic" value="perception/ConePositions"/>-->
+	<!-- <param name="/fast_slam2/odometry_topic" value="/odom"/> -->
+	<param name="LOAM/pointcloud_topic" value='airsim/VelodynePoints'/>
+	<param name="/LOAM/map_topic" value="LOAM/loam_map3d"/>
+	<param name="/LOAM/pose_topic" value="LOAM/loam_odometry"/>
+	
+	
+</launch>

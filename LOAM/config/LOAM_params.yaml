@@ -1,0 +1,9 @@
+fast_slam2: {
+
+
+pointcloud_topic: "airsim/VelodynePoints",
+map_topic: "LOAM/loam_map3d",
+pose_topic: "LOAM/loam_odometry",
+
+
+}
